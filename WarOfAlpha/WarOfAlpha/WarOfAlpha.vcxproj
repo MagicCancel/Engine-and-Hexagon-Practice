@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CFE0D328-8F87-46CC-90E1-47E740064613}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WarOfAlpha</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\SFML-2.1\include;C:\Users\Alejandro\Documents\Visual Studio 2013\Projects\WarOfAlpha\WarOfAlpha\Universal;C:\Users\Alejandro\Documents\Visual Studio 2013\Projects\WarOfAlpha\WarOfAlpha;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\SFML-2.1\include;C:\Users\Alejandro\Documents\Visual Studio 2013\Projects\WarOfAlpha\WarOfAlpha\Universal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actor\CameraC.cpp" />
+    <ClCompile Include="Actor\Cursor.cpp" />
+    <ClCompile Include="Actor\TestMulti.cpp" />
+    <ClCompile Include="Game\GameC.cpp" />
+    <ClCompile Include="Game\GameStateC.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TestActors\EssenceNodeC.cpp" />
+    <ClCompile Include="TestActors\GamePieceC.cpp" />
+    <ClCompile Include="TestActors\P1PieceC.cpp" />
+    <ClCompile Include="TestActors\P2PieceC.cpp" />
+    <ClCompile Include="UIActors\CardHandC.cpp" />
+    <ClCompile Include="UIActors\DayNightClockC.cpp" />
+    <ClCompile Include="UIActors\EssenceCounterC.cpp" />
+    <ClCompile Include="UIActors\GodHealthBoxC.cpp" />
+    <ClCompile Include="UIActors\HeroHealthBoxC.cpp" />
+    <ClCompile Include="UIActors\GameBoardC.cpp" />
+    <ClCompile Include="UIActors\MiniMapC.cpp" />
+    <ClCompile Include="UIActors\VassalHealthBoxC.cpp" />
+    <ClCompile Include="Universal\ActorC.cpp" />
+    <ClCompile Include="Universal\Components\CardDeckComponentC.cpp" />
+    <ClCompile Include="Universal\Components\CreatureComponentC.cpp" />
+    <ClCompile Include="Universal\Components\GraphicComponentC.cpp" />
+    <ClCompile Include="Universal\Components\HighlightComponentC.cpp" />
+    <ClCompile Include="Universal\Components\ShapeComponentC.cpp" />
+    <ClCompile Include="Universal\MessageHandlerC.cpp" />
+    <ClCompile Include="Universal\MultiActorC.cpp" />
+    <ClCompile Include="Universal\ReferenceMasterC.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actor\CameraC.h" />
+    <ClInclude Include="Actor\Cursor.h" />
+    <ClInclude Include="Actor\TestMulti.h" />
+    <ClInclude Include="Game\GameC.h" />
+    <ClInclude Include="Game\GameStateC.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="TestActors\EssenceNodeC.h" />
+    <ClInclude Include="TestActors\GamePieceC.h" />
+    <ClInclude Include="TestActors\P1PieceC.h" />
+    <ClInclude Include="TestActors\P2PieceC.h" />
+    <ClInclude Include="UIActors\CardHandC.h" />
+    <ClInclude Include="UIActors\DayNightClockC.h" />
+    <ClInclude Include="UIActors\EssenceCounterC.h" />
+    <ClInclude Include="UIActors\GodHealthBoxC.h" />
+    <ClInclude Include="UIActors\HeroHealthBoxC.h" />
+    <ClInclude Include="UIActors\GameBoardC.h" />
+    <ClInclude Include="UIActors\MiniMapC.h" />
+    <ClInclude Include="UIActors\UIActorsInclude.h" />
+    <ClInclude Include="UIActors\VassalHealthBoxC.h" />
+    <ClInclude Include="Universal\ActorC.h" />
+    <ClInclude Include="Universal\Components\CardDeckComponentC.h" />
+    <ClInclude Include="Universal\Components\CreatureComponentC.h" />
+    <ClInclude Include="Universal\Components\GraphicComponentC.h" />
+    <ClInclude Include="Universal\Components\HighlightComponentC.h" />
+    <ClInclude Include="Universal\Components\ShapeComponentC.h" />
+    <ClInclude Include="Universal\MessageHandlerC.h" />
+    <ClInclude Include="Universal\MultiActorC.h" />
+    <ClInclude Include="Universal\ReferenceMasterC.h" />
+    <ClInclude Include="Universal\Universal.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Universals">
+      <UniqueIdentifier>{2e9c4781-4c61-46a2-a95c-c07ef73ef0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\UI">
+      <UniqueIdentifier>{d705b33a-8c79-44f9-8636-5a5e56be842a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Universals\Components">
+      <UniqueIdentifier>{e5483f6a-8082-483d-90bf-e749e9b1a4ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\TestActors">
+      <UniqueIdentifier>{d72daf55-1263-4bfa-9468-dd52b8661165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Universals\MessageHandler">
+      <UniqueIdentifier>{c437803a-ee58-4e1c-943c-d00c237c0fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Universals\ReferenceMaster">
+      <UniqueIdentifier>{de3401c4-cd77-4439-ae76-8f212a9db362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Game">
+      <UniqueIdentifier>{5d009015-cda3-49f9-90f4-8a220bd2ef37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\SystemClasses">
+      <UniqueIdentifier>{2913e4f0-e5d0-406b-b162-ec4b97a3a134}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIActors\GodHealthBoxC.cpp">
+      <Filter>Resource Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIActors\HeroHealthBoxC.cpp">
+      <Filter>Resource Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIActors\VassalHealthBoxC.cpp">
+      <Filter>Resource Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIActors\DayNightClockC.cpp">
+      <Filter>Resource Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIActors\GameBoardC.cpp">
+      <Filter>Resource Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIActors\MiniMapC.cpp">
+      <Filter>Resource Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIActors\CardHandC.cpp">
+      <Filter>Resource Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\ActorC.cpp">
+      <Filter>Resource Files\Universals</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\Components\GraphicComponentC.cpp">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\Components\CreatureComponentC.cpp">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\MultiActorC.cpp">
+      <Filter>Resource Files\Universals</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\TestMulti.cpp">
+      <Filter>Resource Files\SystemClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\Components\HighlightComponentC.cpp">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\MessageHandlerC.cpp">
+      <Filter>Resource Files\Universals\MessageHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\ReferenceMasterC.cpp">
+      <Filter>Resource Files\Universals\ReferenceMaster</Filter>
+    </ClCompile>
+    <ClCompile Include="TestActors\P2PieceC.cpp">
+      <Filter>Resource Files\TestActors</Filter>
+    </ClCompile>
+    <ClCompile Include="TestActors\P1PieceC.cpp">
+      <Filter>Resource Files\TestActors</Filter>
+    </ClCompile>
+    <ClCompile Include="TestActors\EssenceNodeC.cpp">
+      <Filter>Resource Files\TestActors</Filter>
+    </ClCompile>
+    <ClCompile Include="TestActors\GamePieceC.cpp">
+      <Filter>Resource Files\TestActors</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\Cursor.cpp">
+      <Filter>Resource Files\SystemClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\Components\CardDeckComponentC.cpp">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Universal\Components\ShapeComponentC.cpp">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\CameraC.cpp">
+      <Filter>Resource Files\SystemClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="UIActors\EssenceCounterC.cpp">
+      <Filter>Resource Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameC.cpp">
+      <Filter>Resource Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameStateC.cpp">
+      <Filter>Resource Files\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\GodHealthBoxC.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\HeroHealthBoxC.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\VassalHealthBoxC.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\DayNightClockC.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\GameBoardC.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\MiniMapC.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\CardHandC.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\ActorC.h">
+      <Filter>Resource Files\Universals</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\Components\GraphicComponentC.h">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\Components\CreatureComponentC.h">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\MultiActorC.h">
+      <Filter>Resource Files\Universals</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\TestMulti.h">
+      <Filter>Resource Files\SystemClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\Cursor.h">
+      <Filter>Resource Files\SystemClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\Universal.h">
+      <Filter>Resource Files\Universals</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\Components\HighlightComponentC.h">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\MessageHandlerC.h">
+      <Filter>Resource Files\Universals\MessageHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\ReferenceMasterC.h">
+      <Filter>Resource Files\Universals\ReferenceMaster</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\UIActorsInclude.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TestActors\P2PieceC.h">
+      <Filter>Resource Files\TestActors</Filter>
+    </ClInclude>
+    <ClInclude Include="TestActors\P1PieceC.h">
+      <Filter>Resource Files\TestActors</Filter>
+    </ClInclude>
+    <ClInclude Include="TestActors\EssenceNodeC.h">
+      <Filter>Resource Files\TestActors</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\Components\CardDeckComponentC.h">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="TestActors\GamePieceC.h">
+      <Filter>Resource Files\TestActors</Filter>
+    </ClInclude>
+    <ClInclude Include="Universal\Components\ShapeComponentC.h">
+      <Filter>Resource Files\Universals\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\CameraC.h">
+      <Filter>Resource Files\SystemClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="UIActors\EssenceCounterC.h">
+      <Filter>Resource Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameC.h">
+      <Filter>Resource Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStateC.h">
+      <Filter>Resource Files\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
